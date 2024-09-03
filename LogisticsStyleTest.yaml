@@ -1,0 +1,1850 @@
+---
+editorVersion: 1.9.0
+schemeVersion: 1.9.0
+base:
+  style: oslo
+  scheme: logistics.day
+definitions:
+  WaterPark.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 0
+  - "#E0E0DF80"
+  - 9
+  - "#E0E0DF59"
+  WaterPark.Label.Color: "#818181"
+  WaterPark.Label.Outline.Color: "#F3F3F3E6"
+  NationalPark.SecondOutline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 10
+  - "#E6E6E633"
+  - 15
+  - "#DADADA33"
+  WaterPark.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 7
+  - "#B5B5B54D"
+  - 16
+  - "#B6B6B64D"
+  WaterPark.SecondOutline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 10
+  - "#CBCBCB24"
+  - 16
+  - "#BDBDBD24"
+  NativeReservation.SecondOutline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 10
+  - "#D5D5D533"
+  - 15
+  - "#D4D4D433"
+  MilitaryBase.SecondOutline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 10
+  - "#D7D7D724"
+  - 15
+  - "#D3D3D324"
+  LandParcelBoundary.Color: "#CECECE64"
+  CityCenter.Class6.Label.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#4A4A4A"
+  - 13
+  - "#424242"
+  CityCenter.Class6.Label.Outline.Color: "#FFFFFFB5"
+  CityCenter.Class7.Label.Color: "#3B3B3B"
+  CityCenter.Class7.Label.Outline.Color: "#FFFFFFB5"
+  POI.TransitStop.Icon.Size: 0
+  POI.TransitAccess.Icon.Size: 0
+  POI.Accomodation.Label.Color: "#727272"
+  POI.Automotive.Label.Color: "#868686"
+  POI.BusinessServicesAreas.Label.Color: "#868686"
+  POI.EatDrink.Label.Color: "#868686"
+  POI.Emergency.Label.Color: "#6F6F6F"
+  POI.Entertainment.Label.Color: "#868686"
+  POI.Facilities.Label.Color: "#7F7F7F"
+  POI.LeisureOutdoor.Label.Color: "#868686"
+  POI.Shopping.Label.Color: "#6D6D6D"
+  POI.SightsMuseum.Label.Color: "#787878"
+  POI.TransitStop.Label.Color: "#6B6B6B"
+  POI.Logistics.Label.Color: "#505050"
+  Ferry.Line.Gap.Length: 0
+  Ferry.Line.Dash.Length: 0
+  Street.Category0.Tunnel.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#C8C8C8"
+  - 6
+  - "#CBCBCB"
+  - 8
+  - "#DADADA"
+  - 10
+  - "#D4D4D4"
+  - 13
+  - "#D1D1D1"
+  - 16
+  - "#D0D0D0"
+  Street.Category1.Tunnel.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#D5D5D5"
+  - 6
+  - "#D8D8D8"
+  - 7
+  - "#E3E3E3"
+  - 8
+  - "#D8D8D8"
+  - 10
+  - "#E5E5E5"
+  - 13
+  - "#D9D9D9"
+  - 16
+  - "#D8D8D8"
+  Street.Category2.Tunnel.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 10
+  - "#E1E1E1"
+  - 12
+  - "#E2E2E2"
+  - 13
+  - "#E6E6E6"
+  - 16
+  - "#E3E3E3"
+  Street.Category3.Tunnel.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11.9
+  - "#D2D2D2"
+  - 12
+  - "#DFDFDF"
+  - 13
+  - "#E2E2E2"
+  - 14
+  - "#E9E9E9"
+  - 16
+  - "#ECECEB"
+  Street.Category4.Tunnel.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 14.5
+  - "#CECECE"
+  - 14.5
+  - "#DFDFDF"
+  - 15.5
+  - "#E3E3E3"
+  - 15.5
+  - "#EAEAEA"
+  - 16
+  - "#ECECEB"
+  Street.Category0.Tunnel.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#A4A4A4"
+  - 6
+  - "#A7A7A7"
+  - 8
+  - "#B3B3B3"
+  - 10
+  - "#AEAEAE"
+  - 13
+  - "#ACACAC"
+  - 16
+  - "#ABABAB"
+  Street.Category1.Tunnel.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#909090"
+  - 6
+  - "#929292"
+  - 10
+  - "#9B9B9B"
+  - 13
+  - "#949494"
+  - 16
+  - "#939393"
+  Street.Category2.Tunnel.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 10
+  - "#999999"
+  - 12
+  - "#989898"
+  - 13
+  - "#9B9B9B"
+  - 16
+  - "#999999"
+  Street.Category3.Tunnel.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11.9
+  - "#808080"
+  - 12
+  - "#8A8A8A"
+  - 13
+  - "#8B8B8B"
+  - 14
+  - "#8E8E8E"
+  - 16
+  - "#909090"
+  Street.Category4.Tunnel.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 14.5
+  - "#7F7F7F"
+  - 14.5
+  - "#898989"
+  - 15.5
+  - "#898989"
+  - 15.5
+  - "#8E8E8E"
+  - 16
+  - "#909090"
+  Street.Category0.TollBridge.Color: "#8F8F8F3C"
+  Street.Category1.TollBridge.Color: "#8F8F8F3C"
+  Street.Category2.TollBridge.Color: "#8F8F8F3C"
+  Street.Category3.TollBridge.Color: "#8F8F8F3C"
+  Street.Category4.TollBridge.Color: "#8F8F8F3C"
+  Street.Category0.TollTunnel.Centerline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#BEBEBE"
+  - 13
+  - "#B8B8B8"
+  Street.Category0.TollTunnel.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 7
+  - "#A0A0A0"
+  - 8
+  - "#A6A6A6"
+  - 11
+  - "#A5A6A5"
+  - 13
+  - "#A2A2A2"
+  Street.Category1.TollTunnel.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 7
+  - "#858585"
+  - 8
+  - "#8E8E8E"
+  - 11
+  - "#8D8D8D"
+  - 13
+  - "#898989"
+  Street.Category2.TollTunnel.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 7
+  - "#7F7F7F"
+  - 8
+  - "#868686"
+  - 11
+  - "#868686"
+  - 13
+  - "#828282"
+  Street.Category3.TollTunnel.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 7
+  - "#797979"
+  - 8
+  - "#808080"
+  - 11
+  - "#808080"
+  - 13
+  - "#7C7C7C"
+  Street.Category4.TollTunnel.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 7
+  - "#737373"
+  - 8
+  - "#797979"
+  - 11
+  - "#797979"
+  - 13
+  - "#767676"
+  Street.Category0.Label.Toll.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 10
+  - "#2F2F2F"
+  - 12
+  - "#2F2F2F"
+  - 15
+  - "#363636"
+  Street.Category1.Label.Toll.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 10
+  - "#2F2F2F"
+  - 12
+  - "#2F2F2F"
+  - 15
+  - "#363636"
+  Street.Category2.Label.Toll.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 10
+  - "#2F2F2F"
+  - 12
+  - "#2F2F2F"
+  - 15
+  - "#363636"
+  Street.Category3.Label.Toll.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 10
+  - "#2F2F2F"
+  - 12
+  - "#2F2F2F"
+  - 15
+  - "#363636"
+  Street.Category4.Label.Toll.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 10
+  - "#2F2F2F"
+  - 12
+  - "#2F2F2F"
+  - 15
+  - "#363636"
+  SkiRun.Arrow.Gap.Length: 0
+  SkiRun.Arrow.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 17
+  - "#D9D9D900"
+  - 18
+  - "#D9D9D9"
+  Street.Category4.RestrictedAccess.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 15
+  - "#D0D0D0BF"
+  - 16
+  - "#DFDFDF"
+  - 17
+  - "#E6E6E6"
+  Street.Category4.RestrictedAccess.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 15
+  - "#8C8C8C00"
+  - 16
+  - "#8C8C8C73"
+  - 17
+  - "#7D7D7DB3"
+  - 18
+  - "#828282"
+  Street.Category4.Arrow.RestrictedAccess.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 18
+  - "#C4C4C400"
+  - 18.25
+  - "#C4C4C4"
+  - 20
+  - "#C4C4C4"
+  - 24
+  - "#D1D1D1"
+  Street.Category4.RestrictedAccessUnpaved.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 15
+  - "#B1B1B100"
+  - 16
+  - "#BABABA66"
+  - 18
+  - "#8D8D8D"
+  Rail.SecondLine.Color: "#B8B8B8"
+  Chairlift.Arrow.Gap.Length: 0
+  Chairlift.Arrow.Width: 0
+  Chairlift.Outline.Color: "#50505000"
+  Water.4000m.Color: "#B3CFEF"
+  Water.5000m.Color: "#B3CFEF"
+  Water.6000m.Color: "#B3CFEF"
+  Water.Outline.Color: "#C5C5C5"
+  Water.SecondOutline.Color: "#C5C5C570"
+  Beach.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 9
+  - "#F0F0F0"
+  - 11
+  - "#F1F1F1"
+  - 13
+  - "#F2F2F2"
+  Beach.Label.Color: "#707070"
+  Beach.Label.Outline.Color: "#FBFBFBE6"
+  BuildingAddress.Label.Color: "#707070D9"
+  BuiltupArea.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#DEDEDE"
+  - 10
+  - "#F1F1F1"
+  Neighborhood.Label.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 13
+  - "#454545"
+  - 14
+  - "#454545"
+  - 14
+  - "#4E4E4E"
+  Neighborhood.Label.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 12
+  - "#FFFFFFB5"
+  - 14
+  - "#FFFFFFB5"
+  - 15
+  - "#FFFFFFE6"
+  CityCenter.Class1.Label.Color: "#070707"
+  CityCenter.Class1.Label.Outline.Color: "#FFFFFFB5"
+  CityCenter.Class2.Label.Color: "#101010"
+  CityCenter.Class2.Label.Outline.Color: "#FFFFFFB5"
+  CityCenter.Class3.Label.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#252525"
+  - 7
+  - "#181818"
+  CityCenter.Class3.Label.Outline.Color: "#FFFFFFB5"
+  CityCenter.Class4.Label.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 7
+  - "#2F2F2F"
+  - 10
+  - "#222222"
+  CityCenter.Class4.Label.Outline.Color: "#FFFFFFB5"
+  CityCenter.Class5.Label.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 9
+  - "#393939"
+  - 10
+  - "#2C2C2C"
+  CityCenter.Class5.Label.Outline.Color: "#FFFFFFB5"
+  CityCenter.Hamlet.Label.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 13
+  - "#515151"
+  - 13
+  - "#454545"
+  - 14
+  - "#454545"
+  - 14
+  - "#535353"
+  - 15
+  - "#4E4E4E"
+  CityCenter.Hamlet.Label.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 12
+  - "#FFFFFFB5"
+  - 14
+  - "#FFFFFFB5"
+  - 14
+  - "#FFFFFFE6"
+  Continent.Label.Color: "#555555CC"
+  Continent.Label.Outline.Color: "#FDFDFD99"
+  CountryBoundary.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 0
+  - "#DFDFDF"
+  - 4
+  - "#B3B3B3"
+  - 6
+  - "#959595"
+  - 13
+  - "#8F8F8F"
+  CountryBoundary.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 0
+  - "#C2C2C100"
+  - 4
+  - "#C2C2C120"
+  - 12
+  - "#A7A7A721"
+  StateBoundary.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 8
+  - "#C4C4C4A6"
+  - 8
+  - "#B4B4B4"
+  - 10
+  - "#AEAEAE"
+  - 15
+  - "#A7A7A7"
+  StateBoundary.Outline.Color: "#D8D8D821"
+  CountryBoundary.Disputed.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 0
+  - "#D8D8D8"
+  - 4
+  - "#AFAFAF"
+  - 6
+  - "#929292"
+  - 13
+  - "#8D8D8D"
+  CountryBoundary.Disputed.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 0
+  - "#C2C2C100"
+  - 4
+  - "#C2C2C120"
+  - 12
+  - "#A7A7A721"
+  StateBoundary.Disputed.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 8
+  - "#C4C4C4A6"
+  - 8
+  - "#A7A7A7"
+  - 16
+  - "#A4A4A4"
+  StateBoundary.Disputed.Outline.Color: "#D8D8D821"
+  Country.Label.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 3
+  - "#5C5C5CCC"
+  - 4
+  - "#4E4E4ECC"
+  - 5
+  - "#4E4E4ECC"
+  - 6
+  - "#5C5C5CCC"
+  Country.Label.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#FDFDFD66"
+  - 6
+  - "#FDFDFD99"
+  State.Label.Color: "#909090"
+  State.Label.Outline.Color: "#FDFDFD99"
+  Ferry.Line.Width: 0
+  Ferry.Line.Color: "#B3B3B3"
+  Ferry.Label.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 12
+  - "#9C9C9C"
+  - 15
+  - "#969696"
+  Desert.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 6
+  - "#F8F8F8"
+  - 10
+  - "#FAFAFA"
+  Desert.Label.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 0
+  - "#8B8B8B"
+  - 10
+  - "#8D8D8D"
+  Desert.Label.Outline.Color: "#F9F9F9E6"
+  Glacier.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 10
+  - "#F6F6F5"
+  - 16
+  - "#F3F3F3"
+  Glacier.Label.Color: "#636363"
+  Glacier.Label.Outline.Color: "#F4F4F4E6"
+  IndustrialComplex.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 9
+  - "#DEDEDE"
+  - 15
+  - "#E1E1E1"
+  IndustrialComplex.Label.Color: "#626262"
+  IndustrialComplex.Label.Outline.Color: "#F4F4F4E6"
+  Airport.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 9
+  - "#DEDEDE"
+  - 15
+  - "#E1E1E1"
+  Cemetery.Color: "#EBEBEB"
+  Allotment.Color: "#EBEBEB"
+  HarborArea.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 9
+  - "#DEDEDE"
+  - 15
+  - "#E1E1E1"
+  HospitalCampus.Color: "#E9E9E9"
+  PedestrianArea.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 9
+  - "#DEDEDE"
+  - 15
+  - "#E1E1E1"
+  Railyard.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 9
+  - "#DEDEDE"
+  - 15
+  - "#E1E1E1"
+  ShoppingComplex.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 9
+  - "#DEDEDE"
+  - 15
+  - "#E1E1E1"
+  SportsComplex.Color: "#EBEBEB"
+  UniversityCampus.Color: "#F0F0F0"
+  Park.Color: "#E8E8E8"
+  Park.Label.Color: "#747474"
+  Park.Label.Outline.Color: "#F3F3F3E6"
+  AmusementPark.Color: "#EBEBEB"
+  AnimalPark.Color: "#EBEBEB"
+  GolfCourse.Color: "#E6E6E6"
+  Island.Label.Color: "#777777"
+  POI.MountainPeak.Icon.Size: 0
+  POI.MountainPeak.Label.Color: "#6A6A6A"
+  POI.MountainPeak.Label.Outline.Color: "#FDFDFD99"
+  POI.MountainPeak.Label.Size: 11
+  MountainRange.Label.Color: "#767676D8"
+  MountainRange.Label.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 0
+  - "#FDFDFD"
+  - 6
+  - "#FDFDFDC3"
+  - 13
+  - "#FDFDFD50"
+  MilitaryBase.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 7
+  - "#E9E9E94B"
+  - 13
+  - "#E9E9E941"
+  - 16
+  - "#E9E9E928"
+  MilitaryBase.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 7
+  - "#D8D8D84D"
+  - 15
+  - "#D4D4D44D"
+  MilitaryBase.Label.Color: "#757575"
+  MilitaryBase.Label.Outline.Color: "#F7F7F7E6"
+  NationalPark.Color: "#E1E1E141"
+  NationalPark.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 7
+  - "#D4D4D466"
+  - 15
+  - "#D1D1D166"
+  NationalPark.Label.Color: "#808080"
+  NationalPark.Label.Outline.Color: "#F6F6F6E6"
+  NativeReservation.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 7
+  - "#EBEBEB4B"
+  - 13
+  - "#EBEBEB3C"
+  - 16
+  - "#ECECEC28"
+  NativeReservation.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 7
+  - "#DEDEDE66"
+  - 15
+  - "#D7D7D766"
+  NativeReservation.Label.Color: "#7D7D7D"
+  NativeReservation.Label.Outline.Color: "#F5F5F5E6"
+  POI.Icon.Size: 0
+  POI.Generic.Label.Color: "#868686"
+  POI.Label.Size: 0
+  Rail.Line.Color: "#D5D5D5"
+  Runway.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#D2D2D200"
+  - 11
+  - "#CCCCCC"
+  Lake.Label.Color: "#6F6F6F"
+  Lake.Label.Outline.Color: "#F3F3F34B"
+  River.Label.Color: "#6F6F6F"
+  River.Label.Outline.Color: "#F3F3F34B"
+  CanalWaterChannel.Label.Color: "#6F6F6F"
+  CanalWaterChannel.Label.Outline.Color: "#F3F3F34B"
+  IntermittentRiver.Label.Color: "#6F6F6F"
+  IntermittentRiver.Label.Outline.Color: "#F3F3F34B"
+  Street.Category0.Toll.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 6
+  - "#7E7E7EEB"
+  - 8
+  - "#848484"
+  - 11
+  - "#838383"
+  - 13
+  - "#7E7E7E"
+  Street.Category0.Toll.Centerline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#A6A6A6"
+  - 13
+  - "#9F9F9F"
+  Street.Category0.Bridge.Color: "#7F7F7F3C"
+  Street.Category0.Arrow.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 16.75
+  - "#A7A7A700"
+  - 17
+  - "#A7A7A7"
+  - 20
+  - "#A7A7A7"
+  - 24
+  - "#B6B6B6"
+  Street.Category0.Arrow.Toll.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 16.75
+  - "#96969600"
+  - 17
+  - "#96969680"
+  Street.Category0.Label.Color: "#424242"
+  Street.Category0.Label.Toll.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#FEFEFEF2"
+  - 12
+  - "#FEFEFEF2"
+  - 14
+  - "#FEFEFED9"
+  - 17
+  - "#FEFEFECC"
+  Street.Category1.Label.Color: "#404040"
+  Street.Category1.Label.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#FFFFFFF2"
+  - 12
+  - "#FFFFFFF2"
+  - 14
+  - "#FFFFFFD9"
+  - 17
+  - "#FFFFFFCC"
+  Street.Category2.Label.Color: "#404040"
+  Street.Category2.Label.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#FFFFFFF2"
+  - 12
+  - "#FFFFFFF2"
+  - 14
+  - "#FFFFFFD9"
+  - 17
+  - "#FFFFFFCC"
+  Street.Category3.Label.Color: "#373737"
+  Street.Category3.Label.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#FFFFFFF2"
+  - 12
+  - "#FFFFFFF2"
+  - 14
+  - "#FFFFFFD9"
+  - 17
+  - "#FFFFFFCC"
+  Street.Category4.Label.Color: "#373737"
+  Street.Category4.Label.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#FFFFFFF2"
+  - 12
+  - "#FFFFFFF2"
+  - 14
+  - "#FFFFFFD9"
+  - 17
+  - "#FFFFFFCC"
+  Street.Pedestrian.Label.Color: "#4C4C4C"
+  Street.Walkway.Label.Color: "#606060"
+  Street.Walkway.Label.Outline.Color: "#F7F7F7A6"
+  Street.Category0.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 6
+  - "#949494EB"
+  - 8
+  - "#828282"
+  - 10
+  - "#7B7B7B"
+  - 13
+  - "#707070"
+  - 16
+  - "#707070"
+  Street.Category0.Centerline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 6
+  - "#848484"
+  - 8
+  - "#7E7E7E"
+  - 11
+  - "#B3B3B3"
+  - 13
+  - "#9F9F9F"
+  - 16
+  - "#9C9C9C"
+  Street.Category0.Tunnel.Centerline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 6
+  - "#B6B6B6"
+  - 8
+  - "#C3C3C3"
+  - 13
+  - "#BCBCBC"
+  - 16
+  - "#BBBBBB"
+  Street.Category1.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 8
+  - "#9D9D9D"
+  - 10
+  - "#9D9D9D"
+  - 13
+  - "#6D6D6D"
+  - 16
+  - "#6F6F6F"
+  Street.Category2.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 12
+  - "#AEAEAE"
+  - 13.5
+  - "#989898"
+  - 14
+  - "#8B8B8B"
+  - 16
+  - "#7A7A7A"
+  Street.Category3.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 14
+  - "#868686"
+  - 15
+  - "#787878"
+  - 17
+  - "#5D5D5D"
+  - 18
+  - "#5C5C5C"
+  Street.Category4.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 14.5
+  - "#C6C6C6"
+  - 15
+  - "#C3C3C3"
+  - 16
+  - "#949494"
+  - 17
+  - "#7F7F7F"
+  - 18
+  - "#5C5C5C"
+  Street.Pedestrian.Outline.Color: "#C1C1C1"
+  Street.Walkway.Outline.Color: "#B5B5B5"
+  Water.0m.Color: "#B3CFEF"
+  Woodland.Label.Color: "#747474"
+  Woodland.Label.Outline.Color: "#F6F6F5E6"
+  Land.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 0
+  - "#FBFBFB"
+  - 10
+  - "#FDFDFD"
+  - 16
+  - "#F7F7F7"
+  Woodland.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 8
+  - "#F2F2F2"
+  - 15
+  - "#ECECEC"
+  Airport.Label.Color: "#6F6F6F"
+  Airport.Label.Outline.Color: "#F2F2F2E6"
+  Cemetery.Label.Color: "#777777"
+  Cemetery.Label.Outline.Color: "#F5F5F5E6"
+  Allotment.Label.Color: "#777777"
+  Allotment.Label.Outline.Color: "#F5F5F5E6"
+  HarborArea.Label.Color: "#626262"
+  HarborArea.Label.Outline.Color: "#F4F4F4E6"
+  HospitalCampus.Label.Color: "#707070"
+  HospitalCampus.Label.Outline.Color: "#EFEFEFE6"
+  PedestrianArea.Label.Color: "#626262"
+  PedestrianArea.Label.Outline.Color: "#F4F4F4E6"
+  Railyard.Label.Color: "#626262"
+  Railyard.Label.Outline.Color: "#F4F4F4E6"
+  ShoppingComplex.Label.Color: "#626262"
+  ShoppingComplex.Label.Outline.Color: "#F4F4F4E6"
+  SportsComplex.Label.Color: "#777777"
+  SportsComplex.Label.Outline.Color: "#F5F5F5E6"
+  UniversityCampus.Label.Color: "#797979"
+  UniversityCampus.Label.Outline.Color: "#F3F3F3E6"
+  AmusementPark.Label.Color: "#777777"
+  AmusementPark.Label.Outline.Color: "#F5F5F5E6"
+  AnimalPark.Label.Color: "#777777"
+  AnimalPark.Label.Outline.Color: "#F5F5F5E6"
+  GolfCourse.Label.Color: "#747474"
+  GolfCourse.Label.Outline.Color: "#F2F2F2E6"
+  Street.Category1.Unpaved.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 9
+  - "#A2A2A166"
+  - 10
+  - "#A2A2A266"
+  - 11
+  - "#B4B4B4"
+  - 16
+  - "#A9A9A9"
+  - 18
+  - "#969696"
+  Street.Category1.Bridge.Color: "#7F7F7F3C"
+  Street.Category1.Arrow.Unpaved.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 16.75
+  - "#C2C2C200"
+  - 17
+  - "#C2C2C2"
+  Street.Category1.Toll.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 6
+  - "#7E7E7EEB"
+  - 8
+  - "#848484"
+  - 11
+  - "#838383"
+  - 13
+  - "#7E7E7E"
+  Street.Category1.Arrow.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 16.75
+  - "#B2B2B200"
+  - 17
+  - "#B3B3B3"
+  - 20
+  - "#B3B3B3"
+  - 24
+  - "#C0C0C0"
+  Street.Category1.Arrow.Toll.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 16.75
+  - "#96969600"
+  - 17
+  - "#96969680"
+  Street.Category2.Unpaved.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 9
+  - "#72727266"
+  - 11
+  - "#79797966"
+  - 12.5
+  - "#8E8E8E66"
+  - 13.5
+  - "#B1B1B1"
+  - 16
+  - "#AAAAAA"
+  - 18
+  - "#A3A3A3"
+  Street.Category2.Bridge.Color: "#7F7F7F3C"
+  Street.Category2.Arrow.Unpaved.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 17
+  - "#CCCCCC00"
+  - 17.25
+  - "#CCCCCC"
+  Street.Category2.Toll.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 6
+  - "#7E7E7EEB"
+  - 8
+  - "#848484"
+  - 11
+  - "#838383"
+  - 13
+  - "#7E7E7E"
+  Street.Category2.Arrow.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 17
+  - "#C2C2C200"
+  - 17.25
+  - "#C2C2C2"
+  - 20
+  - "#C2C2C2"
+  - 24
+  - "#CECECE"
+  Street.Category2.Arrow.Toll.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 17
+  - "#96969600"
+  - 17.25
+  - "#96969680"
+  Street.Category3.Unpaved.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#82828266"
+  - 15
+  - "#B7B7B7"
+  - 18
+  - "#909090"
+  Street.Category3.Bridge.Color: "#7F7F7F3C"
+  Street.Category3.Arrow.Unpaved.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 17
+  - "#CECECE00"
+  - 17.25
+  - "#CECECE"
+  Street.Category3.Toll.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 6
+  - "#7E7E7EEB"
+  - 8
+  - "#848484"
+  - 11
+  - "#838383"
+  - 13
+  - "#7E7E7E"
+  Street.Category3.Arrow.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 17
+  - "#C4C4C400"
+  - 17.25
+  - "#C4C4C4"
+  - 20
+  - "#C4C4C4"
+  - 24
+  - "#D1D1D1"
+  Street.Category3.Arrow.Toll.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 17
+  - "#96969600"
+  - 17.25
+  - "#96969680"
+  Street.Category4.Unpaved.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 13
+  - "#BFBFBF66"
+  - 15
+  - "#DFDFDF66"
+  - 15.5
+  - "#C8C8C8"
+  - 18
+  - "#9E9E9E"
+  Street.Category4.Bridge.Color: "#7F7F7F3C"
+  Street.Category4.Arrow.Unpaved.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 17.25
+  - "#CECECE00"
+  - 17.5
+  - "#CECECE"
+  Street.Category4.Toll.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 6
+  - "#7E7E7EEB"
+  - 8
+  - "#848484"
+  - 11
+  - "#838383"
+  - 13
+  - "#7E7E7E"
+  Street.Category4.Arrow.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 17.25
+  - "#C4C4C400"
+  - 17.5
+  - "#C4C4C4"
+  - 20
+  - "#C4C4C4"
+  - 24
+  - "#D1D1D1"
+  Street.Category4.Arrow.Toll.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 17.25
+  - "#96969600"
+  - 17.5
+  - "#96969680"
+  Street.Pedestrian.Unpaved.Outline.Color: "#C0C0C0"
+  Street.Walkway.Unpaved.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 0
+  - "#C1C1C1"
+  - 14
+  - "#C1C1C1"
+  - 15
+  - "#B1B1B1"
+  - 20
+  - "#B1B1B1"
+  Street.Walkway.Bridge.Color: "#9D9D9D3C"
+  Street.Category1.Label.Unpaved.Color: "#3F3F3F"
+  Street.Category1.Label.Unpaved.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#FFFFFFF2"
+  - 12
+  - "#FFFFFFF2"
+  - 14
+  - "#FFFFFFD9"
+  - 17
+  - "#FFFFFFCC"
+  Street.Category1.Label.Toll.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#FEFEFEF2"
+  - 12
+  - "#FEFEFEF2"
+  - 14
+  - "#FEFEFED9"
+  - 17
+  - "#FEFEFECC"
+  Street.Category2.Label.Unpaved.Color: "#494949"
+  Street.Category2.Label.Unpaved.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#FFFFFFF2"
+  - 12
+  - "#FFFFFFF2"
+  - 14
+  - "#FFFFFFD9"
+  - 17
+  - "#FFFFFFCC"
+  Street.Category2.Label.Toll.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#FEFEFEF2"
+  - 12
+  - "#FEFEFEF2"
+  - 14
+  - "#FEFEFED9"
+  - 17
+  - "#FEFEFECC"
+  Street.Category3.Label.Unpaved.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#FFFFFFF2"
+  - 12
+  - "#FFFFFFF2"
+  - 14
+  - "#FFFFFFD9"
+  - 17
+  - "#FFFFFFCC"
+  Street.Category3.Label.Toll.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#FEFEFEF2"
+  - 12
+  - "#FEFEFEF2"
+  - 14
+  - "#FEFEFED9"
+  - 17
+  - "#FEFEFECC"
+  Street.Category4.Label.Unpaved.Color: "#494949"
+  Street.Category4.Label.Unpaved.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#FFFFFFF2"
+  - 12
+  - "#FFFFFFF2"
+  - 14
+  - "#FFFFFFD9"
+  - 17
+  - "#FFFFFFCC"
+  Street.Category4.Label.Toll.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#FEFEFEF2"
+  - 12
+  - "#FEFEFEF2"
+  - 14
+  - "#FEFEFED9"
+  - 17
+  - "#FEFEFECC"
+  Street.Pedestrian.Label.Unpaved.Color: "#535353"
+  Street.Pedestrian.Label.Unpaved.Outline.Color: "#FFFFFF96"
+  Street.Walkway.Label.Unpaved.Outline.Color: "#F7F7F7A6"
+  Street.Category0.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#B8B8B8"
+  - 6
+  - "#BCBCBC"
+  - 8
+  - "#D0D0D0"
+  - 10
+  - "#C8C8C8"
+  - 13
+  - "#C4C4C4"
+  - 16
+  - "#C3C3C3"
+  Street.Category0.Toll.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#B0B0B0"
+  - 6
+  - "#B1B1B1"
+  - 8
+  - "#BDBDBD"
+  - 11
+  - "#BFBFBF"
+  - 11
+  - "#C3C3C3"
+  - 13
+  - "#BCBCBC"
+  Street.Category0.TollTunnel.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#BBBBBB"
+  - 6
+  - "#BCBCBC"
+  - 8
+  - "#C6C6C6"
+  - 11
+  - "#C8C8C8"
+  - 11
+  - "#CBCBCB"
+  - 13
+  - "#C8C8C8"
+  Street.Category1.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#C2C2C2BF"
+  - 6
+  - "#C6C6C6BF"
+  - 7
+  - "#BCBCBC80"
+  - 8
+  - "#BCBCBCA6"
+  - 10
+  - "#DDDDDD"
+  - 13
+  - "#CECECE"
+  - 16
+  - "#CDCDCD"
+  Street.Category1.Unpaved.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 9
+  - "#D8D8D8BF"
+  - 10
+  - "#E3E3E3BF"
+  - 11
+  - "#E6E6E6"
+  - 16
+  - "#D9D9D9"
+  - 18
+  - "#DBDBDB"
+  Street.Category1.Toll.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#ADADAD"
+  - 6
+  - "#C3C3C3"
+  - 8
+  - "#BDBDBD"
+  - 11
+  - "#BFBFBF"
+  - 11
+  - "#C3C3C3"
+  - 13
+  - "#BBBBBB"
+  Street.Category1.TollTunnel.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#BBBBBB"
+  - 6
+  - "#BCBCBC"
+  - 8
+  - "#C6C6C6"
+  - 11
+  - "#C8C8C8"
+  - 11
+  - "#CBCBCB"
+  - 13
+  - "#C8C8C8"
+  Street.Category2.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 10
+  - "#C7C7C7A6"
+  - 12
+  - "#D9D9D9"
+  - 13
+  - "#DFDFDF"
+  - 16
+  - "#DADADA"
+  Street.Category2.Unpaved.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 9
+  - "#CBCBCBBF"
+  - 11
+  - "#CACACABF"
+  - 11.5
+  - "#CACACABF"
+  - 12.5
+  - "#E8E8E8BF"
+  - 13.5
+  - "#E8E8E8"
+  - 16
+  - "#E4E4E4"
+  - 18
+  - "#E1E1E1"
+  Street.Category2.Toll.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#B0B0B0"
+  - 6
+  - "#B1B1B1"
+  - 8
+  - "#BDBDBD"
+  - 11
+  - "#BFBFBF"
+  - 11
+  - "#C3C3C3"
+  - 13
+  - "#BCBCBC"
+  Street.Category2.TollTunnel.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#BBBBBB"
+  - 6
+  - "#BCBCBC"
+  - 8
+  - "#C6C6C6"
+  - 11
+  - "#C8C8C8"
+  - 11
+  - "#CBCBCB"
+  - 13
+  - "#C8C8C8"
+  Street.Category3.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 10
+  - "#C3C3C3B3"
+  - 12
+  - "#C9C9C9B3"
+  - 13
+  - "#CECECEB3"
+  - 14.5
+  - "#E2E2E2"
+  - 16
+  - "#E6E6E6"
+  Street.Category3.Unpaved.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#CECECDBF"
+  - 15
+  - "#ECECEC"
+  - 18
+  - "#ECECEC"
+  Street.Category3.Toll.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#B0B0B0"
+  - 6
+  - "#B1B1B1"
+  - 8
+  - "#BDBDBD"
+  - 11
+  - "#BFBFBF"
+  - 11
+  - "#C3C3C3"
+  - 13
+  - "#BCBCBC"
+  Street.Category3.TollTunnel.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#BBBBBB"
+  - 6
+  - "#BCBCBC"
+  - 8
+  - "#C6C6C6"
+  - 11
+  - "#C8C8C8"
+  - 11
+  - "#CBCBCB"
+  - 13
+  - "#C8C8C8"
+  Street.Category4.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 13
+  - "#C6C6C6B3"
+  - 14.5
+  - "#C6C6C6B3"
+  - 14.5
+  - "#CCCCCCB3"
+  - 15.5
+  - "#DBDBDB"
+  - 15.5
+  - "#E4E4E4"
+  - 16
+  - "#E6E6E6"
+  Street.Category4.Unpaved.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 13
+  - "#D0D0D0BF"
+  - 15
+  - "#D4D4D4BF"
+  - 15.5
+  - "#D6D6D6BF"
+  - 15.5
+  - "#EBEBEB"
+  - 16
+  - "#EAEAEA"
+  - 18
+  - "#ECECEC"
+  Street.Category4.Toll.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#B0B0B0"
+  - 6
+  - "#B1B1B1"
+  - 8
+  - "#BDBDBD"
+  - 11
+  - "#BFBFBF"
+  - 11
+  - "#C3C3C3"
+  - 13
+  - "#BCBCBC"
+  Street.Category4.TollTunnel.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#BBBBBB"
+  - 6
+  - "#BCBCBC"
+  - 8
+  - "#C6C6C6"
+  - 11
+  - "#C8C8C8"
+  - 11
+  - "#CBCBCB"
+  - 13
+  - "#C8C8C8"
+  Street.Walkway.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 14.9
+  - "#CDCDCD"
+  - 15
+  - "#CECECE"
+  Street.Walkway.Tunnel.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 14.9
+  - "#CDCDCD"
+  - 15
+  - "#CECECE"
+  Street.Walkway.Unpaved.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 14.9
+  - "#CDCDCD"
+  - 15
+  - "#CECECE"
+  Street.Pedestrian.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 14.5
+  - "#D3D3D3"
+  - 14.9
+  - "#C4C4C4"
+  - 15
+  - "#D0D0D0"
+  Street.Pedestrian.Unpaved.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 14
+  - "#CBCBCBED"
+  - 15.5
+  - "#D8D8D8"
+  Chairlift.Line.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 13
+  - "#A1A1A1"
+  - 15
+  - "#474747"
+  Chairlift.Line.Width: 0
+  Chairlift.Label.Outline.Color: "#474747"
+  SkiRun.Line.Width: 0
+  SkiRun.Outline.Color: "#AEAEAE"
+  SkiRun.Outline.Width: 0
+  SkiRun.Label.Color: "#7E7F7E"
+  ParkingArea.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 9
+  - "#DEDEDE"
+  - 15
+  - "#E1E1E1"
+  POI.Accomodation.Label.Outline.Color: "#FFFFFFBF"
+  POI.Automotive.Label.Outline.Color: "#FFFFFFBF"
+  POI.BusinessServicesAreas.Label.Outline.Color: "#FFFFFFBF"
+  POI.EatDrink.Label.Outline.Color: "#FFFFFFBF"
+  POI.Emergency.Label.Outline.Color: "#FFFFFFBF"
+  POI.Entertainment.Label.Outline.Color: "#FFFFFFBF"
+  POI.Facilities.Label.Outline.Color: "#FFFFFFBF"
+  POI.LeisureOutdoor.Label.Outline.Color: "#FFFFFFBF"
+  POI.Shopping.Label.Outline.Color: "#FFFFFFBF"
+  POI.SightsMuseum.Label.Outline.Color: "#FFFFFFBF"
+  POI.TransitStop.Label.Outline.Color: "#FFFFFFBF"
+  Street.Walkway.Bridge.Baseline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#DEDEDE"
+  - 10
+  - "#F1F1F1"
+  Street.Pedestrian.Bridge.Baseline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 5
+  - "#DEDEDE"
+  - 10
+  - "#F1F1F1"
+  Street.Category4.ParkingLot.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 15
+  - "#D0D0D0BF"
+  - 16
+  - "#DFDFDF"
+  - 17
+  - "#E6E6E6"
+  Street.Category4.ParkingLot.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 15
+  - "#8C8C8C00"
+  - 16
+  - "#8C8C8C73"
+  - 17
+  - "#7D7D7DB3"
+  - 18
+  - "#828282"
+  Rail.Outline.Color: "#D5D5D5"
+  Ocean.Label.Outline.Color: "#F3F3F34B"
+  Sea.Label.Outline.Color: "#F3F3F34B"
+  Fjord.Label.Color: "#6F6F6F"
+  Fjord.Label.Outline.Color: "#F3F3F34B"
+  Strait.Label.Color: "#6F6F6F"
+  Strait.Label.Outline.Color: "#F3F3F34B"
+  Ferry.Label.Outline.Color: "#D2D2D2"
+  Sea.Label.Color: "#6F6F6F"
+  Ocean.Label.Color: "#6F6F6F"
+  BayHarbor.Label.Color: "#6F6F6F"
+  BayHarbor.Label.Outline.Color: "#F3F3F34B"
+  River.Color: "#B3CFEF"
+  CanalWaterChannel.Color: "#B3CFEF"
+  IntermittentRiver.Color: "#B3CFEF"
+  Street.Category0.Unpaved.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 9
+  - "#A2A2A166"
+  - 10
+  - "#A2A2A266"
+  - 11
+  - "#B4B4B4"
+  - 16
+  - "#A9A9A9"
+  - 18
+  - "#969696"
+  Street.Category0.Arrow.Unpaved.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 16.75
+  - "#C2C2C200"
+  - 17
+  - "#C2C2C2"
+  Street.Category0.Label.Unpaved.Color: "#3F3F3F"
+  Street.Category0.Label.Unpaved.Outline.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 11
+  - "#FFFFFFF2"
+  - 12
+  - "#FFFFFFF2"
+  - 14
+  - "#FFFFFFD9"
+  - 17
+  - "#FFFFFFCC"
+  Street.Pedestrian.Tunnel.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 14.5
+  - "#D3D3D3"
+  - 14.9
+  - "#C4C4C4"
+  - 15
+  - "#D0D0D0"
+  Street.Pedestrian.Bridge.Color: "#9D9D9D3C"
+  Street.Category3.Label.Unpaved.Color: "#494949"
+  Street.Category0.Unpaved.Color:
+  - interpolate
+  - - linear
+  - - zoom
+  - 9
+  - "#D8D8D8BF"
+  - 10
+  - "#E3E3E3BF"
+  - 11
+  - "#E6E6E6"
+  - 16
+  - "#D9D9D9"
+  - 18
+  - "#DBDBDB"
