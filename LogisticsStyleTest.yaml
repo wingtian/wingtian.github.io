@@ -287,6 +287,67 @@ global:
   tunnel_order: 305
 
 
+  ####################################################  BOUNDARIES  ####################################################
+  boundary:
+    labels:
+      zoom:
+        min: 8
+      offset: [0px, 5px]
+      font:
+        size: 9px
+        transform: uppercase
+        stroke:
+          color: global.land_color
+          width: 3px
+      single_text:
+        offset: [0px, 0px]
+    country:
+      line:
+        width: 1px
+      outline:
+        width: [[3, '0px'], [4, '2px'], [7, '3px']]
+    other: # Used for other boundary kinds like "disputed" etc.:
+      line:
+        dash: [5, 4]
+        width: [[0, '0px'], [9, '2px']]
+      outline:
+        width: [[3, '0px'], [4, '1px'], [5, '2px'], [7, '3px']]
+    state:
+      line:
+        width: 1px
+      outline:
+        width: [[0, '0px'], [9, '1px']]
+  state_boundary_text_color: rgb(102,102,102)
+  country_boundary_color: [
+    [4, 'rgb(160, 160, 180)'], [5, 'rgb(120, 120, 140)'], [6, 'rgb(100, 100, 120)'], [7, 'rgb(100, 100, 120)'],
+    [8, 'rgb(80, 80, 100)'], [9, 'rgb(60, 60, 80)']
+  ]
+  country_boundary_outline_color: [
+    [3, 'rgba(190, 190, 190, 0.1)'], [4, 'rgba(180, 180, 180, 0.15)'], [5, 'rgba(150, 150, 150, 0.15)'],
+    [6, 'rgba(130, 130, 130, 0.15)'], [8, 'rgba(110, 110, 110, 0.15)']
+  ]
+  country_disputed_boundary_color: [
+      [4, 'rgb(160,160,180)'], [5, 'rgb(120,120,140)'], [6, 'rgb(100,100,120)'], [7, 'rgb(100,100,120)'],
+      [8, 'rgb(80,80,100)'], [9, 'rgb(60,60,80 )']
+  ]
+  country_disputed_boundary_background_color: [.50, .50, .50, .15]
+  region_boundary_color: [ # applies to states and regions
+    [3, 'rgb(225, 225, 225)'],  # 0 <= $zoom < 4
+    [4, 'rgb(195, 195, 215)'],  # 4 <= $zoom < 5
+    [5, 'rgb(210, 210, 210)'],  # 5 <= $zoom < 6
+    # 6 <= $zoom < 12 (duplicates avoid interpolation)
+    [6, 'rgb(180, 180, 180)'], [7, 'rgb(180, 180, 180)'], [8, 'rgb(180, 180, 180)'], [9, 'rgb(180, 180, 180)'],
+    [10, 'rgb(180, 180, 180)'], [11, 'rgb(180, 180, 180)'], [12, 'rgb(170, 170, 170)']  # 12 <= $zoom
+  ]
+  region_boundary_outline_color: [ # applies to states and regions
+    [4, 'rgba(220, 220, 220, 0.06)'], # 0 <= $zoom < 5
+    [5, 'rgba(215, 215, 215, 0.06)'], # 5 <= $zoom < 6
+    [6, 'rgba(200, 200, 200, 0.1)'],  # 6 <= $zoom < 7
+    # 7 <= $zoom < 12 (duplicates avoid interpolation)
+    [7, 'rgba(200, 200, 200, 0.16)'], [8, 'rgba(200, 200, 200, 0.16)'], [9, 'rgba(200, 200, 200, 0.16)'],
+    [10, 'rgba(200, 200, 200, 0.16)'], [11, 'rgba(200, 200, 200, 0.16)'], [12, 'rgba(200, 200, 200, 0.2)'] # 12 <= $zoom
+  ]
+
   #####################################################  HIGHWAYS  #####################################################
   highway_fill: [
     [9, 'rgb(235,148,182)'], [10, 'rgb(229,137,175)'], [11, 'rgb(229,137,175)'], [12, 'rgb(239,151,187)'],
